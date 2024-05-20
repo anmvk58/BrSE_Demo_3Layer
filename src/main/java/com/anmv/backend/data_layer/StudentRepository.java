@@ -11,7 +11,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentRepository {
+public class StudentRepository implements IStudentRepository{
 
     private JDBCUtils jdbcUtils;
 
@@ -19,6 +19,7 @@ public class StudentRepository {
         jdbcUtils = new JDBCUtils();
     }
 
+    @Override
     public List<BrSE2305> getListStudents() throws SQLException, IOException {
         List<BrSE2305> listStudent = new ArrayList<>();
 

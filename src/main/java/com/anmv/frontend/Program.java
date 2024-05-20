@@ -17,7 +17,7 @@ public class Program {
         System.out.println("Mời nhập mật khẩu !!!");
         String token = scanner.nextLine();
 
-        List<BrSE2305> listStudent = controller.getListStudent(token);
+        List<BrSE2305> listStudent = controller.getListStudents(token);
 
         if (listStudent == null){
             System.out.println("Không có dữ liệu, hoặc xác thực chưa thành công !!!");
